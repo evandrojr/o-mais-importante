@@ -10,6 +10,28 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp>{
+
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
+
+  @override
+  void initState(){
+    super.initState();
+    flutterLocalNotificationsPlugin = new FlutterLocalNotificationsPlugin();
+    var android = new AndroidInitializationSettings('app_icon');
+    var iOS = new IOSInitializationSettings();
+    var initializationSettings = InitializationSettings(android, iOS);
+    flutterLocalNotificationsPlugin.initialize(initializationSettings, selectNotification: onSelectNotification);
+
+  }
+
+  Future onSelectNotification(String payload){
+    debugPrint("payload: $payload");
+    showDialog(context: context, builder: (_) => new AlertDialog(
+      title: new Text('Notification'),
+      content: new Text('$payload'),
+    );
+  }
+
   @override
   Widget build  (BuildContext context){
     return Scaffold(
