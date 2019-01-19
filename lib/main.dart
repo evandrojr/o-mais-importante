@@ -19,17 +19,45 @@ class _MyAppState extends State<MyApp> {
     var iOS = new IOSInitializationSettings();
     var initializationSettings = InitializationSettings(android, iOS);
     flutterLocalNotificationsPlugin.initialize(initializationSettings,
-        onSelectNotification: onSelectNotification);
+onSelectNotification: onSelectNotification  );
   }
 
-  Future onSelectNotification(String payload) {
-    debugPrint("payload: $payload");
+
+  Future onSelectNotification(String payload) async {
+    if (payload != null) {
+      debugPrint('notification payload: ' + payload);
+    }
+
     showDialog(
         context: context,
         builder: (_) => new AlertDialog(
               title: new Text('Notification'),
               content: new Text('$payload'),
             ));
+
+  }
+
+  // Future onSelectNotification(String payload) {
+  //   debugPrint("payload: $payload");
+  //   showDialog(
+  //       context: context,
+  //       builder: (_) => new AlertDialog(
+  //             title: new Text('Notification'),
+  //             content: new Text('$payload'),
+  //           ));
+  // }
+
+
+  Future onDidRecieveLocalNotification(
+      int id, String title, String body, String payload) async {
+    // display a dialog with the notification details, tap ok to go to another page
+     //   debugPrint("payload: $payload");
+  //   return showDialog(
+  //       context: context,
+  //       builder: (_) => new AlertDialog(
+  //             title: new Text('Notification'),
+  //             content: new Text('$payload'),
+  //           ));
   }
 
   @override
