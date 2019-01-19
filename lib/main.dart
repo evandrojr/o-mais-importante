@@ -15,7 +15,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     flutterLocalNotificationsPlugin = new FlutterLocalNotificationsPlugin();
-    var android = new AndroidInitializationSettings('app_icon');
+    var android = new AndroidInitializationSettings('@mipmap/ic_launcher');
     var iOS = new IOSInitializationSettings();
     var initializationSettings = InitializationSettings(android, iOS);
     flutterLocalNotificationsPlugin.initialize(initializationSettings,
@@ -38,14 +38,31 @@ class _MyAppState extends State<MyApp> {
       appBar: new AppBar(
         title: new Text('O Mais Importante'),
       ),
-      body: new Center(child: new RaisedButton(onPressed: showNotification)),
+      body: new Center(child: new RaisedButton(onPressed: showNotification,
+       child: new Text(
+         'Dica do dia',
+         style: Theme.of(context).textTheme.headline
+       ),)),
     );
   }
 
   showNotification() async {
-    var android = AndroidNotificationDetails('channelId', 'channelName', 'channelDescription');
-    var iOS = new IOSNotificationDetails();
-    var platform = NotificationDetails(android, iOS);
-    await flutterLocalNotificationsPlugin.show( 3, 'Attention', 'Two new messages', platform);
+
+var androidPlatformChannelSpecifics = new AndroidNotificationDetails(
+    'your channel id', 'your channel name', 'your channel description',
+    importance: Importance.Max, priority: Priority.High);
+var iOSPlatformChannelSpecifics = new IOSNotificationDetails();
+var platformChannelSpecifics = new NotificationDetails(
+    androidPlatformChannelSpecifics, iOSPlatformChannelSpecifics);
+await flutterLocalNotificationsPlugin.show(
+    0, 'plain title', 'plain body', platformChannelSpecifics,
+    payload: 'item id 2');
+
+    // var android = AndroidNotificationDetails(
+    //     'channel Id', 'channel NANE', 'channel Description');
+    // var iOS = new IOSNotificationDetails();
+    // var platform = NotificationDetails(android, iOS);
+    // await flutterLocalNotificationsPlugin.show(
+    //     0, 'Attention', 'Two new messages', platform, payload: 'Funcione por favor!');
   }
 }
