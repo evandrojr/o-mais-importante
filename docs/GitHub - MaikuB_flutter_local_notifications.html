@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://github.com/MaikuB/flutter_local_notifications -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  <link rel="dns-prefetch" href="https://github.githubassets.com/">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com/">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-pWLt6abkYhNeAHaDrPVG0yXCtIGRuCkwSUqQpsyN6smAIpIt+Iuq2IZKmoH9l3Cy/9ZnjvVrFZnvFFjGiqE3EA==" rel="stylesheet" href="./GitHub - MaikuB_flutter_local_notifications_files/frameworks-a3b8a10d4a9e37a78f033ef4a4f525f5.css">
+  <link crossorigin="anonymous" media="all" integrity="sha512-lmIgV56oKD4WZEZlZb6hUL/P5RBj3xJuQoNAO9swMntkkYcVw+H6s8THUbeRy7ehcCFQHllAw09J/27g3Zv0Cw==" rel="stylesheet" href="./GitHub - MaikuB_flutter_local_notifications_files/github-0ac541dd7881677a0084d618a9ab634d.css">
+  
+  
+  <link crossorigin="anonymous" media="all" integrity="sha512-L+Xfjk72/sIPS5T8Z8Wy/+/78ngrN7jAjVpE5Zoo2KfZYqr9s8p6selV7sLydYrh0Y3Pu02CuEa7uuq70RjSxg==" rel="stylesheet" href="./GitHub - MaikuB_flutter_local_notifications_files/site-278e4176d194ae782983c71f1f767503.css">
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>GitHub - MaikuB/flutter_local_notifications</title>
+    <meta name="description" content="Contribute to MaikuB/flutter_local_notifications development by creating an account on GitHub.">
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars3.githubusercontent.com/u/25263378?s=400&amp;v=4"><meta property="og:site_name" content="GitHub"><meta property="og:type" content="object"><meta property="og:title" content="MaikuB/flutter_local_notifications"><meta property="og:url" content="https://github.com/MaikuB/flutter_local_notifications"><meta property="og:description" content="Contribute to MaikuB/flutter_local_notifications development by creating an account on GitHub.">
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="E95A:3E2B:155B48C:28BB745:5C42EA92" data-pjax-transient="">
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient="">
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com"><meta name="octolytics-app-id" content="github"><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event"><meta name="octolytics-dimension-request_id" content="E95A:3E2B:155B48C:28BB745:5C42EA92"><meta name="octolytics-dimension-region_edge" content="iad"><meta name="octolytics-dimension-region_render" content="iad">
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true">
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+
+<meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="NzFlOTJjNjE5ZjQ4ZTlhZDE2YjVhNmZjMGRjNDg2MTQ2OTVkZGU3MGY4ZjFkYmVlYjljZGU2NmUzNjkyNmRjYXx7InJlbW90ZV9hZGRyZXNzIjoiMTg5LjkyLjIyOS4xMDAiLCJyZXF1ZXN0X2lkIjoiRTk1QTozRTJCOjE1NUI0OEM6MjhCQjc0NTo1QzQyRUE5MiIsInRpbWVzdGFtcCI6MTU0Nzg4OTI5OSwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR">
+
+  <meta name="html-safe-nonce" content="0293fc5703579c72ca4959d1bbd0432ab20c2d21">
+
+  <meta http-equiv="x-pjax-version" content="80ac724c887289495f54a6aa85a35acf">
+  
+
+      <link href="https://github.com/MaikuB/flutter_local_notifications/commits/master.atom" rel="alternate" title="Recent Commits to flutter_local_notifications:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/MaikuB/flutter_local_notifications git https://github.com/MaikuB/flutter_local_notifications.git">
+
+  <meta name="octolytics-dimension-user_id" content="25263378"><meta name="octolytics-dimension-user_login" content="MaikuB"><meta name="octolytics-dimension-repository_id" content="126691203"><meta name="octolytics-dimension-repository_nwo" content="MaikuB/flutter_local_notifications"><meta name="octolytics-dimension-repository_public" content="true"><meta name="octolytics-dimension-repository_is_fork" content="false"><meta name="octolytics-dimension-repository_network_root_id" content="126691203"><meta name="octolytics-dimension-repository_network_root_nwo" content="MaikuB/flutter_local_notifications"><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false">
+
+
+    <link rel="canonical" href="https://github.com/MaikuB/flutter_local_notifications" data-pjax-transient="">
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+  <link rel="manifest" href="https://github.com/manifest.json" crossorigin="use-credentials">
+
+  <style type="text/css" id="drk_style_theme">div.drk_settings_icon {   z-index: 2147400000 !important;   cursor: pointer !important;   position: fixed !important;   right: 0 !important;   top: 0 !important;   width: 27px !important;   height: 27px !important;   pointer-events: none !important;   cursor: default !important;   background: Transparent url("chrome-extension://imilbobhamcfahccagbncamhpnbkaenm/images/darkness-icon-in-page.png?v=2") no-repeat center !important;   background-size: cover !important;   opacity: 0.8 !important;   transition: opacity .25s !important;   overflow: hidden !important; }   div.drk_settings_icon:hover {     opacity: 1 !important;     transition: opacity 0.03s !important; }   div.drk_settings_icon .drk_settings_link {     position: absolute !important;     right: -18.09188px !important;     top: -18.09188px !important;     background: Transparent !important;     width: 38.18377px !important;     height: 38.18377px !important;     transform: rotate(45deg) !important;     pointer-events: all !important;     cursor: pointer !important; } body[data-drk-promo="s"] div.drk_settings_icon {   opacity: 1 !important;   background: Transparent url("chrome-extension://imilbobhamcfahccagbncamhpnbkaenm/images/darkness-icon-in-page-promo.png?v=2") no-repeat center !important;   background-size: cover !important; }   body[data-drk-promo="s"] div.drk_settings_icon:hover {     opacity: 0.8 !important; } body[data-drk-site-support="ask-developers"] div.drk_settings_icon {   background: Transparent url("chrome-extension://imilbobhamcfahccagbncamhpnbkaenm/images/darkness-icon-in-page-ask-developers.png?v=2") no-repeat center !important;   background-size: cover !important; } html[hide-scrollbar=true] body[data-drk-site="youtube"] div.drk_settings_icon {   display: none !important; } body[data-drk-site="wikipedia"] div.drk_settings_icon, body[data-drk-site="amazon"] div.drk_settings_icon, body[data-drk-site="reddit"] div.drk_settings_icon {   position: absolute !important; } .drk_settings_global_msg {   -webkit-filter: invert(100%) !important;   display: none !important;   z-index: 2147400000 !important;   cursor: pointer !important;   position: fixed !important;   left: 0 !important;   right: 0 !important;   bottom: 0 !important;   background: rgba(60, 60, 60, 0.97) !important;   box-shadow: 0 -2px -4px black !important;   text-shadow: none !important;   color: #ffd400 !important;   font-size: 14px !important;   font-family: Arial, sans-serif !important;   font-weight: normal !important;   padding: 15px 20px !important;   transition: opacity .25s ease-in-out !important; }   .drk_settings_global_msg .drk_settings_global_msg_close {     float: right;     padding-left: 30px !important;     color: #ddd !important;     display: inline-block !important;     text-decoration: underline !important; } /*# sourceMappingURL=page.css.map */ /*# sourceMappingURL=none.css.map */ </style></head>
+
+  <body class="logged-out env-production" data-drk-type="n" data-drk-promo="h" data-drk-site="github" data-drk-site-support="full">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="https://github.com/MaikuB/flutter_local_notifications#start-of-content" tabindex="1" class="px-2 py-4 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+        
+<header class="Header header-logged-out  position-relative f4 py-3" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+        <a class="mr-4" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+          <svg height="32" class="octicon octicon-mark-github text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+        </a>
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--logged-out d-flex flex-justify-between flex-items-center flex-auto">
+      <div class="d-none">
+        <button class="btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <svg height="24" class="octicon octicon-x text-gray" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+        </button>
+      </div>
+
+        <nav class="mt-0" aria-label="Global">
+          <ul class="d-flex list-style-none">
+              <li class=" mr-3 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap  d-inline-block">
+                    Why GitHub?
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 mt-0  p-4 left-n4 position-absolute">
+                    <a href="https://github.com/features" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Features">Features <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a>
+                    <ul class="list-style-none f5 pb-3">
+                      <li class="edge-item-fix"><a href="https://github.com/features/code-review/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code review">Code review</a></li>
+                      <li class="edge-item-fix"><a href="https://github.com/features/project-management/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Project management">Project management</a></li>
+                      <li class="edge-item-fix"><a href="https://github.com/features/integrations" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Integrations">Integrations</a></li>
+                      <li class="edge-item-fix"><a href="https://github.com/features/actions" class="py-2 lh-condensed-ultra d-block link-gray" data-ga-click="(Logged out) Header, go to Actions">Actions</a>
+                      </li><li class="edge-item-fix"><a href="https://github.com/features#team-management" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Team management">Team management</a></li>
+                      <li class="edge-item-fix"><a href="https://github.com/features#social-coding" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Social coding">Social coding</a></li>
+                      <li class="edge-item-fix"><a href="https://github.com/features#documentation" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Documentation">Documentation</a></li>
+                      <li class="edge-item-fix"><a href="https://github.com/features#code-hosting" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code hosting">Code hosting</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                      <li class="edge-item-fix"><a href="https://github.com/case-studies" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Case studies">Case Studies <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a></li>
+                      <li class="edge-item-fix"><a href="https://github.com/security" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Security">Security <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+              <li class=" mr-3 mr-lg-3">
+                <a href="https://github.com/enterprise" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, click, go to Enterprise">Enterprise</a>
+              </li>
+
+              <li class=" mr-3 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap  d-inline-block">
+                    Explore
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-0 mt-0  p-4 left-n4 position-absolute">
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="https://github.com/explore" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Features">Explore GitHub <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2  border-top pt-3">Learn &amp; contribute</h4>
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="https://github.com/topics" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Topics">Topics</a></li>
+                      <li class="edge-item-fix"><a href="https://github.com/collections" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Collections">Collections</a></li>
+                      <li class="edge-item-fix"><a href="https://github.com/trending" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Trending">Trending</a></li>
+                      <li class="edge-item-fix"><a href="https://lab.github.com/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Learning lab">Learning Lab</a></li>
+                      <li class="edge-item-fix"><a href="https://opensource.guide/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Open source guides">Open source guides</a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2  border-top pt-3">Connect with others</h4>
+                    <ul class="list-style-none mb-0">
+                      <li class="edge-item-fix"><a href="https://github.com/events" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Events">Events</a></li>
+                      <li class="edge-item-fix"><a href="https://github.community/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Community forum">Community forum</a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com/" class="py-2 pb-0 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Education">GitHub Education</a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+
+              <li class=" mr-3 mr-lg-3">
+                <a href="https://github.com/marketplace" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Marketplace">Marketplace</a>
+              </li>
+
+              <li class=" mr-3 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap  d-inline-block">
+                    Pricing
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-relative">
+                       <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-4 mt-0  p-4 left-n4 position-absolute">
+                    <a href="https://github.com/pricing" class="pb-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Pricing">Plans <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a>
+
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="https://github.com/pricing#feature-comparison" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Compare features">Compare plans</a></li>
+                      <li class="edge-item-fix"><a href="https://enterprise.github.com/contact" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Compare features">Contact Sales</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0  border-top pt-3">
+                      <li class="edge-item-fix"><a href="https://github.com/nonprofit" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Nonprofits">Nonprofit <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com/" class="py-2 pb-0 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Education">Education <span class="Bump-link-symbol float-right text-normal text-gray-light">→</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex flex-items-center px-0 text-center text-left">
+          <div class="d-lg-flex mr-3">
+            <div class="header-search scoped-search site-scoped-search js-site-search position-relative js-jump-to" role="combobox" aria-owns="jump-to-results" aria-label="Search or jump to" aria-haspopup="listbox" aria-expanded="false">
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --><form class="js-site-search-form" data-scope-type="Repository" data-scope-id="126691203" data-scoped-search-url="/MaikuB/flutter_local_notifications/search" data-unscoped-search-url="/search" action="https://github.com/MaikuB/flutter_local_notifications/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+      <label class="form-control header-search-wrapper header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text" class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable" data-hotkey="s,/" name="q" value="" placeholder="Search" data-unscoped-placeholder="Search GitHub" data-scoped-placeholder="Search" autocapitalize="off" aria-autocomplete="list" aria-controls="jump-to-results" aria-label="Search" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=MyntEZQjAvdUIrCIS5GG693iMd0uZovUDawEbtOyuG5B4C8tPS16Qq2hAWw0XVyovAeTROEniHbg5WcjP5eD5g==" spellcheck="false" autocomplete="off">
+          <input type="hidden" class="js-site-search-type-field" name="type">
+            <img src="./GitHub - MaikuB_flutter_local_notifications_files/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="https://github.com/MaikuB/flutter_local_notifications">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="https://github.com/MaikuB/flutter_local_notifications" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="https://github.com/MaikuB/flutter_local_notifications">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="https://github.com/MaikuB/flutter_local_notifications" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="https://github.com/MaikuB/flutter_local_notifications">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="https://github.com/MaikuB/flutter_local_notifications" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+          </div>
+
+        <a class="HeaderMenu-link no-underline mr-3" href="https://github.com/login?return_to=%2FMaikuB%2Fflutter_local_notifications" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign&nbsp;in</a>
+          <a class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1" href="https://github.com/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign&nbsp;up</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+
+</div>
+
+
+
+  <div role="main" class="application-main " data-commit-hovercards-enabled="">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container="">
+      
+  
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+      <a href="https://github.com/login?return_to=%2FMaikuB%2Fflutter_local_notifications" class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+    Watch
+  </a>
+  <a class="social-count" href="https://github.com/MaikuB/flutter_local_notifications/watchers" aria-label="20 users are watching this repository">
+    20
+  </a>
+
+  </li>
+
+  <li>
+        <a href="https://github.com/login?return_to=%2FMaikuB%2Fflutter_local_notifications" class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to star a repository" rel="nofollow">
+      <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+      Star
+    </a>
+
+    <a class="social-count js-social-count" href="https://github.com/MaikuB/flutter_local_notifications/stargazers" aria-label="246 users starred this repository">
+      246
+    </a>
+
+  </li>
+
+  <li>
+      <a href="https://github.com/login?return_to=%2FMaikuB%2Fflutter_local_notifications" class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+        Fork
+      </a>
+
+    <a href="https://github.com/MaikuB/flutter_local_notifications/network/members" class="social-count" aria-label="56 users forked this repository">
+      56
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=25263378" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MaikuB" aria-describedby="hovercard-aria-description">MaikuB</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="https://github.com/MaikuB/flutter_local_notifications">flutter_local_notifications</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container" itemscope="" itemtype="http://schema.org/BreadcrumbList" aria-label="Repository" data-pjax="#js-repo-pjax-container">
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /MaikuB/flutter_local_notifications" href="https://github.com/MaikuB/flutter_local_notifications">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /MaikuB/flutter_local_notifications/issues" href="https://github.com/MaikuB/flutter_local_notifications/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">17</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /MaikuB/flutter_local_notifications/pulls" href="https://github.com/MaikuB/flutter_local_notifications/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /MaikuB/flutter_local_notifications/projects" href="https://github.com/MaikuB/flutter_local_notifications/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      Projects
+      <span class="Counter">0</span>
+</a>
+
+
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse alerts security people /MaikuB/flutter_local_notifications/pulse" href="https://github.com/MaikuB/flutter_local_notifications/pulse">
+      <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"></path></svg>
+      Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+    
+      <div class="signup-prompt-bg rounded-1">
+      <div class="signup-prompt p-4 text-center mb-4 rounded-1">
+        <div class="position-relative">
+          <!-- '"` --><!-- </textarea></xmp> --><form action="https://github.com/site/dismiss_signup_prompt" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="0hWtYOg9kfL865lMmAEDKvyaRpn/Sg3etnxWEZ+kos4qvHC0NnT1OEe4DHR/8rkY1UFrHRNyCWY41M1VEdIH7w==">
+            <button type="submit" class="position-absolute top-0 right-0 btn-link link-gray" data-ga-click="(Logged out) Sign up prompt, clicked Dismiss, text:dismiss">
+              Dismiss
+            </button>
+</form>          <h3 class="pt-2">Join GitHub today</h3>
+          <p class="col-6 mx-auto">GitHub is home to over 28 million developers working together to host and review code, manage projects, and build software together.</p>
+          <a class="btn btn-primary" href="https://github.com/join?source=prompt-code" data-ga-click="(Logged out) Sign up prompt, clicked Sign up, text:sign-up">Sign up</a>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="">  <div class="f4">
+        <em class="d-inline-block text-gray">
+          No description or website provided.
+        </em>
+  </div>
+</div>
+
+    <div class="repository-topics-container mt-2 mb-3 js-topics-list-container">  <div class="list-topics-container f6">
+      <a href="https://github.com/topics/flutter-plugin" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:flutter-plugin">
+        flutter-plugin
+      </a>
+      <a href="https://github.com/topics/flutter" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:flutter">
+        flutter
+      </a>
+      <a href="https://github.com/topics/notifications" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:notifications">
+        notifications
+      </a>
+      <a href="https://github.com/topics/android" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:android">
+        android
+      </a>
+      <a href="https://github.com/topics/ios" class="topic-tag topic-tag-link" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:ios">
+        ios
+      </a>
+  </div>
+</div>
+
+
+
+  <div class="overall-summary overall-summary-bottomless">
+    <div class="stats-switcher-viewport js-stats-switcher-viewport">
+      <div class="stats-switcher-wrapper">
+      <ul class="numbers-summary">
+        <li class="commits">
+          <a data-pjax="" href="https://github.com/MaikuB/flutter_local_notifications/commits/master">
+              <svg class="octicon octicon-history" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 13H6V6h5v2H8v5zM7 1C4.81 1 2.87 2.02 1.59 3.59L0 2v4h4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7z"></path></svg>
+              <span class="num text-emphasized">
+                197
+              </span>
+              commits
+          </a>
+        </li>
+        <li>
+          <a data-pjax="" href="https://github.com/MaikuB/flutter_local_notifications/branches">
+            <svg class="octicon octicon-git-branch" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+            <span class="num text-emphasized">
+              3
+            </span>
+            branches
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/MaikuB/flutter_local_notifications/releases">
+            <svg class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"></path></svg>
+            <span class="num text-emphasized">
+              0
+            </span>
+            releases
+          </a>
+        </li>
+
+
+          <li>
+              <a href="https://github.com/MaikuB/flutter_local_notifications/graphs/contributors">
+  <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z"></path></svg>
+    <span class="num text-emphasized">
+      5
+    </span>
+    contributors
+</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/MaikuB/flutter_local_notifications/blob/master/LICENSE">
+              <svg class="octicon octicon-law" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"></path></svg>
+                View license
+            </a>
+          </li>
+      </ul>
+
+        <div class="repository-lang-stats">
+          <ol class="repository-lang-stats-numbers">
+            <li>
+                <a href="https://github.com/MaikuB/flutter_local_notifications/search?l=java" data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#b07219;"></span>
+                  <span class="lang">Java</span>
+                  <span class="percent">45.0%</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/MaikuB/flutter_local_notifications/search?l=dart" data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#00B4AB;"></span>
+                  <span class="lang">Dart</span>
+                  <span class="percent">36.9%</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/MaikuB/flutter_local_notifications/search?l=objective-c" data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#438eff;"></span>
+                  <span class="lang">Objective-C</span>
+                  <span class="percent">16.4%</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/MaikuB/flutter_local_notifications/search?l=ruby" data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#701516;"></span>
+                  <span class="lang">Ruby</span>
+                  <span class="percent">1.7%</span>
+                </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <button type="button" class="d-flex p-0 repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details" data-ga-click="Repository, language bar stats toggle, location:repo overview">
+      <span class="language-color" aria-label="Java 45.0%" style="width:45.0%; background-color:#b07219;" itemprop="keywords">Java</span>
+      <span class="language-color" aria-label="Dart 36.9%" style="width:36.9%; background-color:#00B4AB;" itemprop="keywords">Dart</span>
+      <span class="language-color" aria-label="Objective-C 16.4%" style="width:16.4%; background-color:#438eff;" itemprop="keywords">Objective-C</span>
+      <span class="language-color" aria-label="Ruby 1.7%" style="width:1.7%; background-color:#701516;" itemprop="keywords">Ruby</span>
+  </button>
+
+
+
+
+
+
+  <div class="file-navigation in-mid-page d-flex flex-items-start">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left js-load-contents" data-contents-url="/MaikuB/flutter_local_notifications/ref-list/master?source_action=disambiguate&amp;source_controller=files">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w" type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax="">
+    <div class="select-menu-modal">
+      <div class="js-select-menu-deferred-content"></div>
+      <div class="select-menu-loading-overlay anim-pulse">
+        <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"></path></svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <button type="button" class="btn btn-sm disabled tooltipped tooltipped-n new-pull-request-btn" aria-label="You must be signed in to create a pull request">
+          New pull request
+        </button>
+
+  <div class="breadcrumb flex-auto">
+    
+  </div>
+
+  <div class="BtnGroup">
+
+    <a href="https://github.com/MaikuB/flutter_local_notifications/find/master" class="btn btn-sm empty-icon float-right BtnGroup-item" data-pjax="" data-hotkey="t" data-ga-click="Repository, find file, location:repo overview">
+      Find file
+    </a>
+  </div>
+  
+
+    <details class="get-repo-select-menu js-get-repo-select-menu position-relative details-overlay details-reset">
+  <summary class="btn btn-sm btn-primary">
+    Clone or download
+    <span class="dropdown-caret"></span>
+  </summary>
+  <div class="position-relative">
+    <div class="get-repo-modal dropdown-menu dropdown-menu-sw pb-0 js-toggler-container  js-get-repo-modal">
+
+      <div class="get-repo-modal-options">
+          <div class="clone-options https-clone-options">
+
+            <h4 class="mb-1">
+              Clone with HTTPS
+              <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+                <svg class="octicon octicon-question" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></svg>
+              </a>
+            </h4>
+            <p class="mb-2 get-repo-decription-text">
+              Use Git or checkout with SVN using the web URL.
+            </p>
+
+            <div class="input-group">
+  <input type="text" class="form-control input-monospace input-sm" data-autoselect="" value="https://github.com/MaikuB/flutter_local_notifications.git" aria-label="Clone this repository at https://github.com/MaikuB/flutter_local_notifications.git" readonly="">
+  <div class="input-group-button">
+    <clipboard-copy value="https://github.com/MaikuB/flutter_local_notifications.git" aria-label="Copy to clipboard" class="btn btn-sm" tabindex="0" role="button">
+      <svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"></path></svg>
+    </clipboard-copy>
+  </div>
+</div>
+
+          </div>
+
+        <div class="mt-2">
+          
+<a href="https://github.com/MaikuB/flutter_local_notifications/archive/master.zip" class="btn btn-outline get-repo-btn
+" rel="nofollow" data-ga-click="Repository, download zip, location:repo overview">
+  Download ZIP
+</a>
+
+        </div>
+      </div>
+
+      <div class="js-modal-download-mac py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-windows py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-xcode py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Xcode<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://developer.apple.com/xcode/">download Xcode</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-visual-studio py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Visual Studio<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://visualstudio.github.com/">download the GitHub extension for Visual Studio</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+    </div>
+  </div>
+</details>
+
+</div>
+
+
+  
+
+
+  <div class="commit-tease js-details-container Details d-flex rounded-top-1" data-issue-and-pr-hovercards-enabled="">
+    
+<div class="AvatarStack flex-self-start ">
+  <div class="AvatarStack-body" aria-label="MaikuB">
+
+        <a class="avatar" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=25263378" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MaikuB" aria-describedby="hovercard-aria-description">
+          <img height="20" width="20" alt="@MaikuB" src="./GitHub - MaikuB_flutter_local_notifications_files/25263378">
+</a>  </div>
+</div>
+
+    <div class="flex-auto f6 mr-3">
+      
+      <a href="https://github.com/MaikuB/flutter_local_notifications/commits?author=MaikuB" class="commit-author tooltipped tooltipped-s user-mention" aria-label="View all commits by MaikuB">MaikuB</a>
+
+
+  
+
+
+        <a data-pjax="true" title="Merge pull request #154 from MaikuB/dev
+
+0.4.4+2 release" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/05f41f6d3977be346b3383650e848031d5d76ed5">Merge pull request</a> <a class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="398638155" data-permission-text="Issue title is private" data-url="https://github.com/MaikuB/flutter_local_notifications/issues/154" data-hovercard-type="pull_request" data-hovercard-url="/MaikuB/flutter_local_notifications/pull/154/hovercard" href="https://github.com/MaikuB/flutter_local_notifications/pull/154" aria-describedby="hovercard-aria-description">#154</a> <a data-pjax="true" title="Merge pull request #154 from MaikuB/dev
+
+0.4.4+2 release" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/05f41f6d3977be346b3383650e848031d5d76ed5">from MaikuB/dev</a>
+          <span class="hidden-text-expander inline">
+            <button type="button" class="ellipsis-expander js-details-target" aria-expanded="false">…</button>
+          </span>
+
+        <div class="commit-desc"><pre class="text-small">0.4.4+2 release</pre></div>
+    </div>
+    <div class="no-wrap">
+      Latest commit
+      <a class="commit-tease-sha" href="https://github.com/MaikuB/flutter_local_notifications/commit/05f41f6d3977be346b3383650e848031d5d76ed5" data-pjax="">
+        05f41f6
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2019-01-13T09:48:22Z" title="13 de jan de 2019 06:48 BRT">6 days ago</relative-time></span>
+    </div>
+  </div>
+
+
+
+<div class="file-wrap">
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="https://github.com/MaikuB/flutter_local_notifications/tree/05f41f6d3977be346b3383650e848031d5d76ed5">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax="">
+    <thead>
+      <tr>
+        <th><span class="sr-only">Type</span></th>
+        <th><span class="sr-only">Name</span></th>
+        <th><span class="sr-only">Latest commit message</span></th>
+        <th><span class="sr-only">Commit time</span></th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./GitHub - MaikuB_flutter_local_notifications_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="android" id="c31b32364ce19ca8fcd150a417ecce58-7d439e172c69fb4ce2aaa32950087c2b0fafa2af" href="https://github.com/MaikuB/flutter_local_notifications/tree/master/android">android</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Provide a way to hide the large icon for expanded big picture notifications" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/bcdd2fb60f919654268191d9abfe6f97b99beaec">Provide a way to hide the large icon for expanded big picture notific…</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-01-03T10:45:46Z" title="3 de jan de 2019 07:45 BRT">16 days ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./GitHub - MaikuB_flutter_local_notifications_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="example" id="1a79a4d60de6718e8e5b326e338ae533-08f577c03be7f674de5ac060d166c36840690256" href="https://github.com/MaikuB/flutter_local_notifications/tree/master/example">example</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Fix name of onDidReceiveLocalNotificationCallback that should have been onDidReceiveLocalNotification in the 0.4.4 release" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/e2d549942f8999e0b6b717c35b2a011e51b46f9c">Fix name of onDidReceiveLocalNotificationCallback that should have be…</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-01-13T09:41:23Z" title="13 de jan de 2019 06:41 BRT">6 days ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./GitHub - MaikuB_flutter_local_notifications_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="ios" id="9e304d4e8df1b74cfa009913198428ab-dbe4e6c2acfcfc7536c1d568efcbdaf3f9ef8b5f" href="https://github.com/MaikuB/flutter_local_notifications/tree/master/ios">ios</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Handle didReceiveLocalNotification within he plugin" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/061416fd4e99cb374953dabddeb58ecd185fe9d3">Handle didReceiveLocalNotification within he plugin</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-01-13T03:26:09Z" title="13 de jan de 2019 00:26 BRT">6 days ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./GitHub - MaikuB_flutter_local_notifications_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="lib" id="e8acc63b1e238f3255c900eed37254b8-1a1abb7f851ea425ee86dd78a0c031ea50ac2a7d" href="https://github.com/MaikuB/flutter_local_notifications/tree/master/lib">lib</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Fix name of onDidReceiveLocalNotificationCallback that should have been onDidReceiveLocalNotification in the 0.4.4 release" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/e2d549942f8999e0b6b717c35b2a011e51b46f9c">Fix name of onDidReceiveLocalNotificationCallback that should have be…</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-01-13T09:41:23Z" title="13 de jan de 2019 06:41 BRT">6 days ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./GitHub - MaikuB_flutter_local_notifications_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="test" id="098f6bcd4621d373cade4e832627b4f6-cb449f62bf9c8f60205e92bf996e0944fd447bc1" href="https://github.com/MaikuB/flutter_local_notifications/tree/master/test">test</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Adjust layout of plugin code to hide implementation files to make importing the plugin a lot easier. Renamed classes that had the platform as part of the name to use a prefix convention instead of a suffix one" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/09d6033957f2f93f45290897fd6c44d209bb8200">Adjust layout of plugin code to hide implementation files to make imp…</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-06-02T00:54:28Z" title="1 de jun de 2018 21:54 BRT">8 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./GitHub - MaikuB_flutter_local_notifications_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title=".gitignore" id="a084b794bc0759e7a6b77810e01874f2-241c97bfd4d57789888c0ec4602b225fca194f0c" href="https://github.com/MaikuB/flutter_local_notifications/blob/master/.gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Exclude vscode folder" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/a879449f648c46089a6ac23e1d69c3343ac3e01f">Exclude vscode folder</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-03-29T05:01:52Z" title="29 de mar de 2018 02:01 BRT">10 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./GitHub - MaikuB_flutter_local_notifications_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="CHANGELOG.md" id="4ac32a78649ca5bdd8e0ba38b7006a1e-07e2a0e23a1a962aaaf49cc8a80a3ab67267c5e0" href="https://github.com/MaikuB/flutter_local_notifications/blob/master/CHANGELOG.md">CHANGELOG.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Fix CHANGELOG" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/79107c8abb67462c757f4f6d64a23883b6d383c1">Fix CHANGELOG</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-01-13T09:47:00Z" title="13 de jan de 2019 06:47 BRT">6 days ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./GitHub - MaikuB_flutter_local_notifications_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="LICENSE" id="9879d6db96fd29134fc802214163b95a-b76af5bbc19c9807807f6688d70aacec9a83caa6" itemprop="license" href="https://github.com/MaikuB/flutter_local_notifications/blob/master/LICENSE">LICENSE</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Fix license text" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/47be47a067f7a0956a13d2cf3061c1342c799e86">Fix license text</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-05-30T05:14:10Z" title="30 de mai de 2018 02:14 BRT">8 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./GitHub - MaikuB_flutter_local_notifications_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="README.md" id="04c6e90faac2675aa89e2176d2eec7d8-c39ef74d298dc5167e863739abe6c0e1055af500" href="https://github.com/MaikuB/flutter_local_notifications/blob/master/README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Fix name of onDidReceiveLocalNotificationCallback that should have been onDidReceiveLocalNotification in the 0.4.4 release" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/e2d549942f8999e0b6b717c35b2a011e51b46f9c">Fix name of onDidReceiveLocalNotificationCallback that should have be…</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-01-13T09:41:23Z" title="13 de jan de 2019 06:41 BRT">6 days ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./GitHub - MaikuB_flutter_local_notifications_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="flutter_local_notifications.iml" id="6de76c1802defc83a99fef6d551c8c46-5522468fd56ffc994d5714f4fea12775ed54fcab" href="https://github.com/MaikuB/flutter_local_notifications/blob/master/flutter_local_notifications.iml">flutter_local_notifications.iml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="initial commit of plugin code" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/67a9581f8794117e25f2b4c7999cb1a56c456735">initial commit of plugin code</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-03-25T12:20:28Z" title="25 de mar de 2018 09:20 BRT">10 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./GitHub - MaikuB_flutter_local_notifications_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="flutter_local_notifications_android.iml" id="5080222d68a9fbd7b8faf646ce4de3f7-0ebb6c9fe76317d7b1a912e45ab4a4bcfdfc4aa6" href="https://github.com/MaikuB/flutter_local_notifications/blob/master/flutter_local_notifications_android.iml">flutter_local_notifications_android.iml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="initial commit of plugin code" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/67a9581f8794117e25f2b4c7999cb1a56c456735">initial commit of plugin code</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-03-25T12:20:28Z" title="25 de mar de 2018 09:20 BRT">10 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./GitHub - MaikuB_flutter_local_notifications_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="pubspec.yaml" id="fb2d52cd953afedcafc9fe7629c6f132-659365f0af2490d1dd5b9c2c05d3d436b0fd66a3" href="https://github.com/MaikuB/flutter_local_notifications/blob/master/pubspec.yaml">pubspec.yaml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Fix CHANGELOG" class="message" href="https://github.com/MaikuB/flutter_local_notifications/commit/79107c8abb67462c757f4f6d64a23883b6d383c1">Fix CHANGELOG</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-01-13T09:47:00Z" title="13 de jan de 2019 06:47 BRT">6 days ago</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  <div id="readme" class="Box Box--condensed instapaper_body md js-code-block-container">
+    <div class="Box-header px-2 clearfix">
+      <h3 class="Box-title pr-3">
+        <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+        README.md
+      </h3>
+    </div>
+      <div class="Box-body p-6">
+        <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-flutter-local-notifications-plugin" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#flutter-local-notifications-plugin"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Flutter Local Notifications Plugin</h1>
+<p><a href="https://pub.dartlang.org/packages/flutter_local_notifications" rel="nofollow"><img src="./GitHub - MaikuB_flutter_local_notifications_files/68747470733a2f2f696d672e736869656c64732e696f2f7075622f762f666c75747465725f6c6f63616c5f6e6f74696669636174696f6e732e737667" alt="pub package" data-canonical-src="https://img.shields.io/pub/v/flutter_local_notifications.svg" style="max-width:100%;"></a></p>
+<p>A cross platform plugin for displaying local notifications.</p>
+<h2><a id="user-content-supported-platforms" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#supported-platforms"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Supported Platforms</h2>
+<ul>
+<li>Android API 16+ (4.1+, the minimum version supported by Flutter). Uses the NotificationCompat APIs so it can be run older Android devices.</li>
+<li>iOS 8.0+ (the minimum version supported by Flutter). Supports the old and new iOS notification APIs (the User Notifications Framework introduced in iOS 10 but will use the UILocalNotification APIs for devices predating iOS 10)</li>
+</ul>
+<h2><a id="user-content-features" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Features</h2>
+<ul>
+<li>Mockable (plugin and API methods aren't static)</li>
+<li>Display basic notifications</li>
+<li>Scheduling when notifications should appear</li>
+<li>Periodically show a notification (interval based)</li>
+<li>Schedule a notification to be shown daily at a specified time</li>
+<li>Schedule a notification to be shown weekly on a specified day and time</li>
+<li>Cancelling/removing notification by id or all of them</li>
+<li>Specify a custom notification sound</li>
+<li>Ability to handle when a user has tapped on a notification, when the app is the foreground, background or terminated</li>
+<li>Determine if an app was launched due to tapping on a notification</li>
+<li>[Android/iOS 10+] Receive callback when a notification is shown (<em>NOTE</em>: support on iOS is difficult to verify at the moment since Flutter engine support for executing headless Dart code on iOS doesn't support plugins at the moment. See <a href="https://github.com/flutter/flutter/issues/21925">here</a> for details)</li>
+<li>[Android] Configuring the importance level</li>
+<li>[Android] Configuring the priority</li>
+<li>[Android] Customising the vibration pattern for notifications</li>
+<li>[Android] Configure the default icon for all notifications</li>
+<li>[Android] Configure the icon for each notification (overrides the default when specified)</li>
+<li>[Android] Configure the large icon for each notification. The icon can be a drawable or a file on the device</li>
+<li>[Android] Formatting notification content via HTML markup (see <a href="https://developer.android.com/guide/topics/resources/string-resource.html#StylingWithHTML" rel="nofollow">https://developer.android.com/guide/topics/resources/string-resource.html#StylingWithHTML</a>)</li>
+<li>[Android] Support for the following notification styles
+<ul>
+<li>Big picture</li>
+<li>Big text</li>
+<li>Inbox</li>
+</ul>
+</li>
+<li>[Android] Group notifications</li>
+<li>[Android] Show progress notifications</li>
+<li>[iOS] Customise the permissions to be requested around displaying notifications</li>
+</ul>
+<p>Note that this plugin aims to provide abstractions for all platforms as opposed to having methods that only work on specific platforms. However, each method allows passing in "platform-specifics" that contains data that is specific for customising notifications on each platform. It is still under development so expect the API surface to change over time.</p>
+<p><strong>IMPORTANT</strong>: Recurring notifications on Android use the <a href="https://developer.android.com/reference/android/app/AlarmManager" rel="nofollow">Alarm Manager</a> API. This is standard practice but does mean the delivery of the notifications/alarms are inexact and this is documented Android behaviour as per the previous link.</p>
+<h2><a id="user-content-acknowledgements" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#acknowledgements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Acknowledgements</h2>
+<ul>
+<li><a href="https://github.com/javiercbk">Javier Lecuona</a> for submitting the PR that added the ability to have notifications shown daily</li>
+<li><a href="https://github.com/JeffScaturro">Jeff Scaturro</a> for submitting the PR to fix the iOS issue around showing daily and weekly notifications</li>
+<li><a href="https://github.com/icavanaugh95">Ian Cavanaugh</a> for helping create a sample to reproduce the problem reported in <a href="https://github.com/MaikuB/flutter_local_notifications/issues/88">issue #88</a></li>
+</ul>
+<h2><a id="user-content-raising-issues-and-contributions" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#raising-issues-and-contributions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Raising issues and contributions</h2>
+<p>If you run into issues, please raise them on the GitHub repository. Please do not email them to me as I will be ignoring emails going forward as GitHub is the appropriate place for them. It would also be much appreciated if they could be limited to actual bugs or feature requests. If you're looking at how you could use the plugin to do a particular kind of notification, check the example app provides detailed code samples for each supported feature. Also try to check the README first in case you have missed something e.g. platform-specific setup.</p>
+<p>Contributions are welcome by submitting a PR for me to review. If it's to add new features, appreciate it if you could try to maintain the architecture or try to improve on it. However, do note that I will not take PRs that add methods at the Dart level that don't work on all platforms. However, platform-specific configuration through the use parameters are fine as that's approach being taken via this plugin.</p>
+<h2><a id="user-content-getting-started" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#getting-started"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Getting Started</h2>
+<p>The GitHub repository has an example app that should demonstrate of all the supported features of the plugin. Please check the example for more detailed code samples. If you only copy and paste the Dart code then this will not work as there's setup required for each platform. Pub also generates API docs for the latest version <a href="https://pub.dartlang.org/documentation/flutter_local_notifications/latest/" rel="nofollow">here</a></p>
+<p>The following samples will demonstrate the more commonly used functionalities. The first step is to create a new instance of the plugin class and then initialise it with the settings to use for each platform</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">FlutterLocalNotificationsPlugin</span> flutterLocalNotificationsPlugin <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">FlutterLocalNotificationsPlugin</span>();
+<span class="pl-c">// initialise the plugin. app_icon needs to be a added as a drawable resource to the Android head project</span>
+<span class="pl-k">var</span> initializationSettingsAndroid <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">AndroidInitializationSettings</span>(<span class="pl-s">'app_icon'</span>);
+<span class="pl-k">var</span> initializationSettingsIOS <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">IOSInitializationSettings</span>(
+    onDidReceiveLocalNotificationCallback<span class="pl-k">:</span> onDidRecieveLocationLocation);
+<span class="pl-k">var</span> initializationSettings <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">InitializationSettings</span>(
+    initializationSettingsAndroid, initializationSettingsIOS);
+flutterLocalNotificationsPlugin.<span class="pl-en">initialize</span>(initializationSettings,
+    onSelectNotification<span class="pl-k">:</span> onSelectNotification);</pre></div>
+<p>Here we specify we have specified the default icon to use for notifications on Android (refer to the Android Integration section) and designated the function (onSelectNotification) that should fire when a notification has been tapped on. Specifying this callback is entirely optional. In this example, it will trigger navigation to another page and display the payload associated with the notification.</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">Future</span> <span class="pl-en">onSelectNotification</span>(<span class="pl-c1">String</span> payload) <span class="pl-k">async</span> {
+    <span class="pl-k">if</span> (payload <span class="pl-k">!=</span> <span class="pl-c1">null</span>) {
+      <span class="pl-en">debugPrint</span>(<span class="pl-s">'notification payload: '</span> <span class="pl-k">+</span> payload);
+    }
+    <span class="pl-k">await</span> <span class="pl-c1">Navigator</span>.<span class="pl-en">push</span>(
+      context,
+      <span class="pl-k">new</span> <span class="pl-c1">MaterialPageRoute</span>(builder<span class="pl-k">:</span> (context) <span class="pl-k">=</span><span class="pl-k">&gt;</span> <span class="pl-k">new</span> <span class="pl-c1">SecondScreen</span>(payload)),
+    );
+}</pre></div>
+<p>In the real world, this payload could represent the id of the item you want to display the details of. Once the initialisation has been done, then you can manage the displaying of notifications.</p>
+<h3><a id="user-content-displaying-a-notification" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#displaying-a-notification"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Displaying a notification</h3>
+<div class="highlight highlight-source-dart"><pre><span class="pl-k">var</span> androidPlatformChannelSpecifics <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">AndroidNotificationDetails</span>(
+    <span class="pl-s">'your channel id'</span>, <span class="pl-s">'your channel name'</span>, <span class="pl-s">'your channel description'</span>,
+    importance<span class="pl-k">:</span> <span class="pl-c1">Importance</span>.<span class="pl-c1">Max</span>, priority<span class="pl-k">:</span> <span class="pl-c1">Priority</span>.<span class="pl-c1">High</span>);
+<span class="pl-k">var</span> iOSPlatformChannelSpecifics <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">IOSNotificationDetails</span>();
+<span class="pl-k">var</span> platformChannelSpecifics <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">NotificationDetails</span>(
+    androidPlatformChannelSpecifics, iOSPlatformChannelSpecifics);
+<span class="pl-k">await</span> flutterLocalNotificationsPlugin.<span class="pl-en">show</span>(
+    <span class="pl-c1">0</span>, <span class="pl-s">'plain title'</span>, <span class="pl-s">'plain body'</span>, platformChannelSpecifics,
+    payload<span class="pl-k">:</span> <span class="pl-s">'item id 2'</span>);</pre></div>
+<p>In this block of code, the details for each platform have been specified. This includes the channel details that is required for Android 8.0+. The payload has been specified ('item id 2'), that will passed back through your application when the user has tapped on a notification. Note that for Android devices that notifications will only in appear in the tray and won't appear as a toast aka heads-up notification unless things like the priority/importance has been set appropriately. Refer to the Android docs (<a href="https://developer.android.com/guide/topics/ui/notifiers/notifications.html#Heads-up" rel="nofollow">https://developer.android.com/guide/topics/ui/notifiers/notifications.html#Heads-up</a>) for additional information.</p>
+<h3><a id="user-content-scheduling-a-notification" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#scheduling-a-notification"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Scheduling a notification</h3>
+<div class="highlight highlight-source-dart"><pre><span class="pl-k">var</span> scheduledNotificationDateTime <span class="pl-k">=</span>
+        <span class="pl-k">new</span> <span class="pl-c1">DateTime</span>.<span class="pl-en">now</span>().<span class="pl-en">add</span>(<span class="pl-k">new</span> <span class="pl-c1">Duration</span>(seconds<span class="pl-k">:</span> <span class="pl-c1">5</span>));
+<span class="pl-k">var</span> androidPlatformChannelSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">AndroidNotificationDetails</span>(<span class="pl-s">'your other channel id'</span>,
+        <span class="pl-s">'your other channel name'</span>, <span class="pl-s">'your other channel description'</span>);
+<span class="pl-k">var</span> iOSPlatformChannelSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">IOSNotificationDetails</span>();
+<span class="pl-c1">NotificationDetails</span> platformChannelSpecifics <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">NotificationDetails</span>(
+    androidPlatformChannelSpecifics, iOSPlatformChannelSpecifics);
+<span class="pl-k">await</span> flutterLocalNotificationsPlugin.<span class="pl-en">schedule</span>(
+    <span class="pl-c1">0</span>,
+    <span class="pl-s">'scheduled title'</span>,
+    <span class="pl-s">'scheduled body'</span>,
+    scheduledNotificationDateTime,
+    platformChannelSpecifics);</pre></div>
+<h3><a id="user-content-periodically-show-a-notification-with-a-specified-interval" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#periodically-show-a-notification-with-a-specified-interval"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Periodically show a notification with a specified interval</h3>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c">// Show a notification every minute with the first appearance happening a minute after invoking the method</span>
+<span class="pl-k">var</span> androidPlatformChannelSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">AndroidNotificationDetails</span>(<span class="pl-s">'repeating channel id'</span>,
+        <span class="pl-s">'repeating channel name'</span>, <span class="pl-s">'repeating description'</span>);
+<span class="pl-k">var</span> iOSPlatformChannelSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">IOSNotificationDetails</span>();
+<span class="pl-k">var</span> platformChannelSpecifics <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">NotificationDetails</span>(
+    androidPlatformChannelSpecifics, iOSPlatformChannelSpecifics);
+<span class="pl-k">await</span> flutterLocalNotificationsPlugin.<span class="pl-en">periodicallyShow</span>(<span class="pl-c1">0</span>, <span class="pl-s">'repeating title'</span>,
+    <span class="pl-s">'repeating body'</span>, <span class="pl-c1">RepeatInterval</span>.<span class="pl-c1">EveryMinute</span>, platformChannelSpecifics);</pre></div>
+<h3><a id="user-content-show-a-daily-notification-at-a-specific-time" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#show-a-daily-notification-at-a-specific-time"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Show a daily notification at a specific time</h3>
+<div class="highlight highlight-source-dart"><pre><span class="pl-k">var</span> time <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">Time</span>(<span class="pl-c1">10</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>);
+<span class="pl-k">var</span> androidPlatformChannelSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">AndroidNotificationDetails</span>(<span class="pl-s">'repeatDailyAtTime channel id'</span>,
+        <span class="pl-s">'repeatDailyAtTime channel name'</span>, <span class="pl-s">'repeatDailyAtTime description'</span>);
+<span class="pl-k">var</span> iOSPlatformChannelSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">IOSNotificationDetails</span>();
+<span class="pl-k">var</span> platformChannelSpecifics <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">NotificationDetails</span>(
+    androidPlatformChannelSpecifics, iOSPlatformChannelSpecifics);
+<span class="pl-k">await</span> flutterLocalNotificationsPlugin.<span class="pl-en">showDailyAtTime</span>(
+    <span class="pl-c1">0</span>,
+    <span class="pl-s">'show daily title'</span>,
+    <span class="pl-s">'Daily notification shown at approximately ${<span class="pl-v">_toTwoDigitString(time.hour)</span>}:${<span class="pl-v">_toTwoDigitString(time.minute)</span>}:${<span class="pl-v">_toTwoDigitString(time.second)</span>}'</span>,
+    time,
+    platformChannelSpecifics);</pre></div>
+<h3><a id="user-content-show-a-weekly-notification-on-specific-day-and-time" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#show-a-weekly-notification-on-specific-day-and-time"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Show a weekly notification on specific day and time</h3>
+<div class="highlight highlight-source-dart"><pre><span class="pl-k">var</span> time <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">Time</span>(<span class="pl-c1">10</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>);
+<span class="pl-k">var</span> androidPlatformChannelSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">AndroidNotificationDetails</span>(<span class="pl-s">'show weekly channel id'</span>,
+        <span class="pl-s">'show weekly channel name'</span>, <span class="pl-s">'show weekly description'</span>);
+<span class="pl-k">var</span> iOSPlatformChannelSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">IOSNotificationDetails</span>();
+<span class="pl-k">var</span> platformChannelSpecifics <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">NotificationDetails</span>(
+    androidPlatformChannelSpecifics, iOSPlatformChannelSpecifics);
+<span class="pl-k">await</span> flutterLocalNotificationsPlugin.<span class="pl-en">showWeeklyAtDayAndTime</span>(
+    <span class="pl-c1">0</span>,
+    <span class="pl-s">'show weekly title'</span>,
+    <span class="pl-s">'Weekly notification shown on Monday at approximately ${<span class="pl-v">_toTwoDigitString(time.hour)</span>}:${<span class="pl-v">_toTwoDigitString(time.minute)</span>}:${<span class="pl-v">_toTwoDigitString(time.second)</span>}'</span>,
+    <span class="pl-c1">Day</span>.<span class="pl-c1">Monday</span>,
+    time,
+    platformChannelSpecifics);</pre></div>
+<h3><a id="user-content-android-only-grouping-notifications" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#android-only-grouping-notifications"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>[Android only] Grouping notifications</h3>
+<p>This is a "translation" of the sample available at <a href="https://developer.android.com/training/notify-user/group.html" rel="nofollow">https://developer.android.com/training/notify-user/group.html</a>
+For iOS, you could just display the summary notification (not shown in the example) as otherwise the following code would show three notifications</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">String</span> groupKey <span class="pl-k">=</span> <span class="pl-s">'com.android.example.WORK_EMAIL'</span>;
+<span class="pl-c1">String</span> groupChannelId <span class="pl-k">=</span> <span class="pl-s">'grouped channel id'</span>;
+<span class="pl-c1">String</span> groupChannelName <span class="pl-k">=</span> <span class="pl-s">'grouped channel name'</span>;
+<span class="pl-c1">String</span> groupChannelDescription <span class="pl-k">=</span> <span class="pl-s">'grouped channel description'</span>;
+<span class="pl-c">// example based on https://developer.android.com/training/notify-user/group.html</span>
+<span class="pl-c1">AndroidNotificationDetails</span> firstNotificationAndroidSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">AndroidNotificationDetails</span>(
+        groupChannelId, groupChannelName, groupChannelDescription,
+        importance<span class="pl-k">:</span> <span class="pl-c1">Importance</span>.<span class="pl-c1">Max</span>,
+        priority<span class="pl-k">:</span> <span class="pl-c1">Priority</span>.<span class="pl-c1">High</span>,
+        groupKey<span class="pl-k">:</span> groupKey);
+<span class="pl-c1">NotificationDetails</span> firstNotificationPlatformSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">NotificationDetails</span>(firstNotificationAndroidSpecifics, <span class="pl-c1">null</span>);
+<span class="pl-k">await</span> flutterLocalNotificationsPlugin.<span class="pl-en">show</span>(<span class="pl-c1">1</span>, <span class="pl-s">'Alex Faarborg'</span>,
+    <span class="pl-s">'You will not believe...'</span>, firstNotificationPlatformSpecifics);
+<span class="pl-c1">AndroidNotificationDetails</span> secondNotificationAndroidSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">AndroidNotificationDetails</span>(
+        groupChannelId, groupChannelName, groupChannelDescription,
+        importance<span class="pl-k">:</span> <span class="pl-c1">Importance</span>.<span class="pl-c1">Max</span>,
+        priority<span class="pl-k">:</span> <span class="pl-c1">Priority</span>.<span class="pl-c1">High</span>,
+        groupKey<span class="pl-k">:</span> groupKey);
+<span class="pl-c1">NotificationDetails</span> secondNotificationPlatformSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">NotificationDetails</span>(secondNotificationAndroidSpecifics, <span class="pl-c1">null</span>);
+<span class="pl-k">await</span> flutterLocalNotificationsPlugin.<span class="pl-en">show</span>(
+    <span class="pl-c1">2</span>,
+    <span class="pl-s">'Jeff Chang'</span>,
+    <span class="pl-s">'Please join us to celebrate the...'</span>,
+    secondNotificationPlatformSpecifics);
+
+<span class="pl-c">// create the summary notification required for older devices that pre-date Android 7.0 (API level 24)</span>
+<span class="pl-c1">List</span><span class="pl-k">&lt;</span><span class="pl-c1">String</span><span class="pl-k">&gt;</span> lines <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">List</span><span class="pl-k">&lt;</span><span class="pl-c1">String</span><span class="pl-k">&gt;</span>();
+lines.<span class="pl-en">add</span>(<span class="pl-s">'Alex Faarborg  Check this out'</span>);
+lines.<span class="pl-en">add</span>(<span class="pl-s">'Jeff Chang    Launch Party'</span>);
+<span class="pl-c1">InboxStyleInformation</span> inboxStyleInformation <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">InboxStyleInformation</span>(
+    lines,
+    contentTitle<span class="pl-k">:</span> <span class="pl-s">'2 new messages'</span>,
+    summaryText<span class="pl-k">:</span> <span class="pl-s">'janedoe@example.com'</span>);
+<span class="pl-c1">AndroidNotificationDetails</span> androidPlatformChannelSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">AndroidNotificationDetails</span>(
+        groupChannelId, groupChannelName, groupChannelDescription,
+        style<span class="pl-k">:</span> <span class="pl-c1">NotificationStyleAndroid</span>.<span class="pl-c1">Inbox</span>,
+        styleInformation<span class="pl-k">:</span> inboxStyleInformation,
+        groupKey<span class="pl-k">:</span> groupKey,
+        setAsGroupSummary<span class="pl-k">:</span> <span class="pl-c1">true</span>);
+<span class="pl-c1">NotificationDetails</span> platformChannelSpecifics <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">NotificationDetails</span>(androidPlatformChannelSpecifics, <span class="pl-c1">null</span>);
+<span class="pl-k">await</span> flutterLocalNotificationsPlugin.<span class="pl-en">show</span>(
+    <span class="pl-c1">3</span>, <span class="pl-s">'Attention'</span>, <span class="pl-s">'Two new messages'</span>, platformChannelSpecifics);</pre></div>
+<h3><a id="user-content-cancellingdeleting-a-notification" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#cancellingdeleting-a-notification"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cancelling/deleting a notification</h3>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c">// cancel the notification with id value of zero</span>
+<span class="pl-k">await</span> flutterLocalNotificationsPlugin.<span class="pl-en">cancel</span>(<span class="pl-c1">0</span>);</pre></div>
+<h3><a id="user-content-cancellingdeleting-all-notifications" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#cancellingdeleting-all-notifications"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cancelling/deleting all notifications</h3>
+<div class="highlight highlight-source-dart"><pre><span class="pl-k">await</span> flutterLocalNotificationsPlugin.<span class="pl-en">cancelAll</span>();</pre></div>
+<h3><a id="user-content-get-details-on-if-the-app-was-launched-via-a-notification" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#get-details-on-if-the-app-was-launched-via-a-notification"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Get details on if the app was launched via a notification</h3>
+<div class="highlight highlight-source-dart"><pre> <span class="pl-k">var</span> notificationAppLaunchDetails <span class="pl-k">=</span>
+     <span class="pl-k">await</span> flutterLocalNotificationsPlugin.<span class="pl-en">getNotificationAppLaunchDetails</span>();</pre></div>
+<p>This should cover the basic functionality. Please check out the <code>example</code> directory for a sample app that illustrates the rest of the functionality available and refer to the API docs for more information. Also read the below on what you need to configure on each platform</p>
+<h2><a id="user-content-android-integration" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#android-integration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Android Integration</h2>
+<p>If your application needs the ability to schedule notifications then you need to request permissions to be notified when the phone has been booted as scheduled notifications uses the <code>AlarmManager</code> API to determine when notifications should be displayed. However, they are cleared when a phone has been turned off. Requesting permission requires adding the following to the manifest</p>
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">uses-permission</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>android.permission.RECEIVE_BOOT_COMPLETED<span class="pl-pds">"</span></span>/&gt;</pre></div>
+<p>The following is also needed to ensure scheduled notifications remain scheduled upon a reboot (this is handled by the plugin)</p>
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">receiver</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">intent-filter</span>&gt;
+        &lt;<span class="pl-ent">action</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>android.intent.action.BOOT_COMPLETED<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">action</span>&gt;
+    &lt;/<span class="pl-ent">intent-filter</span>&gt;
+&lt;/<span class="pl-ent">receiver</span>&gt;</pre></div>
+<p>Developers will also need to add the following so that plugin can handle displaying scheduled notifications</p>
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">receiver</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver<span class="pl-pds">"</span></span> /&gt;</pre></div>
+<p>If the vibration pattern of an Android notification will be customised then add the following</p>
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">uses-permission</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>android.permission.VIBRATE<span class="pl-pds">"</span></span> /&gt;</pre></div>
+<p>Notification icons should be added as a drawable resource. The example project/code shows how to set default icon for all notifications and how to specify one for each notification. It is possible to use launcher icon/mipmap and this by default is <code>@mipmap/ic_launcher</code> in the Android manifest and can be passed <code>AndroidInitializationSettings</code> constructor. However, the offical Android guidance is that you should use drawable resources. Custom notification sounds should be added as a raw resource and the sample illustrates how to play a notification with a custom sound. Refer to the following links around Android resources and notification icons.</p>
+<ul>
+<li><a href="https://developer.android.com/guide/topics/resources/providing-resources" rel="nofollow">https://developer.android.com/guide/topics/resources/providing-resources</a></li>
+<li><a href="https://developer.android.com/studio/write/image-asset-studio#notification" rel="nofollow">https://developer.android.com/studio/write/image-asset-studio#notification</a></li>
+<li><a href="https://developer.android.com/guide/practices/ui_guidelines/icon_design_status_bar" rel="nofollow">https://developer.android.com/guide/practices/ui_guidelines/icon_design_status_bar</a></li>
+</ul>
+<p>When specifying the large icon bitmap or big picture bitmap (associated with the big picture style), bitmaps can be either a drawable resource or file on the device. This is specified via a single property (e.g. the <code>largeIcon</code> property associated with the <code>AndroidNotificationDetails</code> class) and there will be a corresponding property of the <code>BitmapSource</code> enum type (e.g. <code>largeIconBitmapSource</code>) that indicates if the string value represents the name of the drawable resource or the path to the bitmap file.</p>
+<p>Note that with Android 8.0+, sounds and vibrations are associated with notification channels and can only be configured when they are first created. Showing/scheduling a notification will create a channel with the specified id if it doesn't exist already. If another notification specifies the same channel id but tries to specify another sound or vibration pattern then nothing occurs.</p>
+<p>If you run into error messages around the <code>com.android.support:support-compat</code> library due to version conflicts, you can try adding the following to the <code>build.gradle</code> file of your Android head project as reported by another dev <a href="https://github.com/MaikuB/flutter_local_notifications/issues/5">here</a></p>
+<div class="highlight highlight-source-groovy-gradle"><pre><span class="pl-en">allprojects</span> {
+    repositories {
+       <span class="pl-c"><span class="pl-c">//</span>...</span>
+    }
+    subprojects {
+        project<span class="pl-k">.</span>configurations<span class="pl-k">.</span>all {
+            resolutionStrategy<span class="pl-k">.</span>eachDependency { <span class="pl-v">details</span> <span class="pl-k">-&gt;</span>
+                <span class="pl-k">if</span> (details<span class="pl-k">.</span>requested<span class="pl-k">.</span>group <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>com.android.support<span class="pl-pds">'</span></span>
+                        <span class="pl-k">&amp;&amp;</span> <span class="pl-k">!</span>details<span class="pl-k">.</span>requested<span class="pl-k">.</span>name<span class="pl-k">.</span>contains(<span class="pl-s"><span class="pl-pds">'</span>multidex<span class="pl-pds">'</span></span>) ) {
+                    details<span class="pl-k">.</span>useVersion <span class="pl-s"><span class="pl-pds">"</span>27.1.1<span class="pl-pds">"</span></span>
+                }
+            }
+        }
+    }
+}</pre></div>
+<p>Note though this will force other plugins to use the same version of the library that this plugin depends on so may not be desirable. If you have another suggestion on how to solve this please do let me know :)</p>
+<p>When doing a release build of your app, you'll likely need to customise your ProGuard configuration file as per this <a href="https://developer.android.com/studio/build/shrink-code#keep-code" rel="nofollow">link</a> and add the following line</p>
+<pre><code>-keep class com.dexterous.** { *; }
+</code></pre>
+<h2><a id="user-content-ios-integration" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#ios-integration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>iOS Integration</h2>
+<p>By design, iOS applications do not display notifications when they're in the foreground. For iOS 10+, use the presentation options to control the behaviour for when a notification is triggered while the app is in the foreground. For older versions of iOS, you need to handle the callback as part of specifying the method that should be fired to the <code>onDidReceiveLocalNotification</code> argument when creating an instance <code>IOSInitializationSettings</code> object that is passed to the function for initializing the plugin. A snippet below from the sample app shows how this can be done</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c">// initialise the plugin. app_icon needs to be a added as a drawable resource to the Android head project</span>
+<span class="pl-k">var</span> initializationSettingsAndroid <span class="pl-k">=</span>
+    <span class="pl-k">new</span> <span class="pl-c1">AndroidInitializationSettings</span>(<span class="pl-s">'app_icon'</span>);
+<span class="pl-k">var</span> initializationSettingsIOS <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">IOSInitializationSettings</span>(
+    onDidReceiveLocalNotification<span class="pl-k">:</span> onDidRecieveLocalNotification);
+<span class="pl-k">var</span> initializationSettings <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">InitializationSettings</span>(
+    initializationSettingsAndroid, initializationSettingsIOS);
+flutterLocalNotificationsPlugin.<span class="pl-en">initialize</span>(initializationSettings,
+    onSelectNotification<span class="pl-k">:</span> onSelectNotification);
+
+...
+
+  <span class="pl-c1">Future</span> <span class="pl-en">onDidRecieveLocalNotification</span>(
+      <span class="pl-k">int</span> id, <span class="pl-c1">String</span> title, <span class="pl-c1">String</span> body, <span class="pl-c1">String</span> payload) <span class="pl-k">async</span> {
+    <span class="pl-c">// display a dialog with the notification details, tap ok to go to another page</span>
+    <span class="pl-en">showDialog</span>(
+      context<span class="pl-k">:</span> context,
+      builder<span class="pl-k">:</span> (<span class="pl-c1">BuildContext</span> context) <span class="pl-k">=</span><span class="pl-k">&gt;</span> <span class="pl-k">new</span> <span class="pl-c1">CupertinoAlertDialog</span>(
+            title<span class="pl-k">:</span> <span class="pl-k">new</span> <span class="pl-c1">Text</span>(title),
+            content<span class="pl-k">:</span> <span class="pl-k">new</span> <span class="pl-c1">Text</span>(body),
+            actions<span class="pl-k">:</span> [
+              <span class="pl-c1">CupertinoDialogAction</span>(
+                isDefaultAction<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+                child<span class="pl-k">:</span> <span class="pl-k">new</span> <span class="pl-c1">Text</span>(<span class="pl-s">'Ok'</span>),
+                onPressed<span class="pl-k">:</span> () <span class="pl-k">async</span> {
+                  <span class="pl-c1">Navigator</span>.<span class="pl-en">of</span>(context, rootNavigator<span class="pl-k">:</span> <span class="pl-c1">true</span>).<span class="pl-en">pop</span>();
+                  <span class="pl-k">await</span> <span class="pl-c1">Navigator</span>.<span class="pl-en">push</span>(
+                    context,
+                    <span class="pl-k">new</span> <span class="pl-c1">MaterialPageRoute</span>(
+                      builder<span class="pl-k">:</span> (context) <span class="pl-k">=</span><span class="pl-k">&gt;</span> <span class="pl-k">new</span> <span class="pl-c1">SecondScreen</span>(payload),
+                    ),
+                  );
+                },
+              )
+            ],
+          ),
+    );
+  }
+</pre></div>
+<p>If you have set notifications to be periodically shown, then on older iOS versions (&lt; 10), if the application was uninstalled without cancelling all alarms then the next time it's installed you may see the "old" notifications being fired. If this is not the desired behaviour, then you can add the following to the <code>didFinishLaunchingWithOptions</code> method of your <code>AppDelegate</code> class.</p>
+<div class="highlight highlight-source-objc"><pre><span class="pl-k">if</span>(![[<span class="pl-c1">NSUserDefaults</span> <span class="pl-c1">standardUserDefaults</span>]objectForKey:<span class="pl-s"><span class="pl-pds">@"</span>Notification<span class="pl-pds">"</span></span>]){
+    [[UIApplication <span class="pl-c1">sharedApplication</span>] <span class="pl-c1">cancelAllLocalNotifications</span>];
+    [[<span class="pl-c1">NSUserDefaults</span> <span class="pl-c1">standardUserDefaults</span>]setBool:<span class="pl-c1">YES</span> <span class="pl-c1">forKey:</span><span class="pl-s"><span class="pl-pds">@"</span>Notification<span class="pl-pds">"</span></span>];
+}</pre></div>
+<p>When using custom notification sound, developers should be aware that iOS enforces restrictions on this (e.g. supported file formats). As of this writing, this is documented by Apple at</p>
+<p><a href="https://developer.apple.com/documentation/usernotifications/unnotificationsound?language=objc" rel="nofollow">https://developer.apple.com/documentation/usernotifications/unnotificationsound?language=objc</a></p>
+<p><strong>NOTE</strong>: this plugin registers itself as the delegate to handle incoming notifications and actions. This may cause problems if you're using other plugins for push notifications (e.g. <code>firebase_messaging</code>) as they will most likely do the same and it's only possible to register a single delegate. iOS handles showing push notifications out of the box so if you're only using this plugin to display the notification payload on Android then it's suggested that you fork the plugin code and remove the following part in the iOS code</p>
+<div class="highlight highlight-source-objc"><pre>UNUserNotificationCenter *center = [UNUserNotificationCenter <span class="pl-c1">currentNotificationCenter</span>];
+center.delegate = instance;</pre></div>
+<p>Unfortunately, this platform limitation does mean that it's not possible to use this plugin together other plugins for push notifications on iOS. If you are in this situation, then my only advice is that you'll need to need to look at writing customised platform-specific code for your application that may involve taking bits and pieces of code from the plugins you need.</p>
+<h2><a id="user-content-testing" class="anchor" aria-hidden="true" href="https://github.com/MaikuB/flutter_local_notifications#testing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Testing</h2>
+<p>As the plugin class is not static, it is possible to mock and verify it's behaviour when writing tests as part of your application. Check the source code for a sample test suite can be found at <em>test/flutter_local_notifications_test.dart</em> that demonstrates how this can be done.</p>
+</article>
+      </div>
+  </div>
+
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div><div id="drk_page_html" class="github"><!-- This HTML is injected to supported websites only, upon page load --> <!-- Moon icon on a website's toolbar --> <div class="drk_settings_icon" id="drk_settings_icon"><div class="drk_settings_link"></div></div> <!-- Global message to user (e.g. in case of a conflict with another extension) --> <div class="drk_settings_global_msg"><div class="drk_settings_global_msg_close">Close</div><div class="drk_settings_global_msg_text"></div></div></div>
+
+        
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">© 2019 <span title="0.20251s from unicorn-6c6558698f-njzfh">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com/">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon mr-lg-4" href="https://github.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3"><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3"><a href="https://github.blog/" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" integrity="sha512-Mp0nAOFvmE8PVQP49TPVMbQBLb+lpf3gu9GF1CPqybGGzl/8KEKDTKzuJpxxd5xF8HUi85xKPkssLtVVdLKtlw==" type="application/javascript" src="./GitHub - MaikuB_flutter_local_notifications_files/compat-6e5ed2648dae3be3f9358af5732a780f.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-xx5bFEpCTis78HDM45zXGUp0XjJNgfxVJuvXT7CCXCTv1JgICExLtsUhV7HO90M3gLO0j5DA0zkAmMrsLJsFUw==" type="application/javascript" src="./GitHub - MaikuB_flutter_local_notifications_files/frameworks-dcdc6bbaaa9ce93ccc296c33ff1f40c3.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-OVom1EjMVGuAhxgj+IUZGLWX+Y2YCwA5HczPO5EkywA3LpBr+opzeA2g7YZmzT0TR0w94V9UGCvzNux1BO80gw==" type="application/javascript" src="./GitHub - MaikuB_flutter_local_notifications_files/github-ff2a16ee220770be00aef7ab3773f297.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="https://github.com/MaikuB/flutter_local_notifications">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="https://github.com/MaikuB/flutter_local_notifications">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  <template id="site-details-dialog"></template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+<div id="hovercard-aria-description" class="sr-only">
+  Press h to open a hovercard with more details.
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  
+
+
+</body></html>
